@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animation</title>
+<style> 
+div {
+  width: 300px;
+  height: 300px;
+  background-color: red;
+  animation-name: changecolor;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  /* animation-iteration-count: 2; */
+  position: relative;
+  animation-fill-mode: forwards;
+  /* animation-direction: reverse; */
+  /* animation-direction: alternate; */
+  /* alternate - The animation is played forwards first, then backwards */
+    /* alternate-reverse - The animation is played backwards first, then forwards */
+    /* animation-direction: alternate-reverse; */
+}
+
+@keyframes changecolor {
+    /* from{CSS PROPRTY} 
+       to{CSS PROPERTY} */
+  /* from {background-color: red;}
+  to {background-color: yellow;} */
+
+  
+  0%   {background-color: red;left:0px;top:0px;}
+  25%  {background-color: yellow;left:100px;top:0px;}
+  50%  {background-color: blue;left:200px;top:0px;}
+  75%  {background-color: pink;left:200px;top:100px;}
+  100% {background-color: green;left:0px;top:0px;}
+
+  /* 0% {background-color: purple;}
+  14.28% {background-color: lawngreen;}
+  28.57% {background-color: pink;}
+  42.85% {background-color: red;}
+  57.14% {background-color: orange;}
+  71.42% {background-color: aqua;}
+  85.71% {background-color: brown;}
+   100% {background-color: black;} */
+}
+</style>
+</head>
+<body>
+
+<!-- <h1>CSS Animation</h1> -->
+
+<div></div>
+
+<!-- <p><b>Note:</b> When an animation is finished, it goes back to its original style.</p> -->
+
+</body>
+</html>
+
+
